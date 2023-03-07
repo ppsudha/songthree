@@ -28,12 +28,12 @@ public class SongController {
         return songService.getSongById(songId);
     }
     @PostMapping("/songs")
-    public Song addSong(@RequestBody Song song) {
-        return songService.addSong(song);
+    public Song addSong(@RequestBody Song playlist) {
+        return songService.addSong(playlist);
     }
     @PutMapping("/songs/{songId}")
-    public Song updateSong(@PathVariable("songId") int songId, @RequestBody Song song) {
-        return songService.updateSong(songId, song);
+    public Song updateSong(@PathVariable("songId") int songId, @RequestBody Song playlist) {
+        return songService.updateSong(songId, playlist);
     }
     @DeleteMapping("/songs/{songId}")
     public void deleteSong(@PathVariable("songId") int songId) {
