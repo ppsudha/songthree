@@ -1,11 +1,12 @@
-// Write your code here
-
 package com.example.song.repository;
-import java.util.*;
+
 import com.example.song.model.Song;
 
+import java.util.*;
+
 public interface SongRepository {
-    ArrayList<Song> getSongs();
+
+    ArrayList<Song> getAllSongs();
 
     Song getSongById(int songId);
 
@@ -14,5 +15,4 @@ public interface SongRepository {
     Song updateSong(int songId, Song song);
 
     void deleteSong(int songId);
-
 }
