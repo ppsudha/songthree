@@ -26,7 +26,6 @@ public class Song {
      @Column(name="musicdirector")
     private String musicDirector; 
     public Song() {
-
     }
     public int getSongId() {
         return songId;
